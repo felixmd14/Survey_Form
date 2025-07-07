@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Enter Your Full Name: <input id="name" type="text" name="name" placeholder="At least two names" required></label>
+        <label id="email-label">Enter Your Email Address: <input id="email" type="email" name="email" placeholder="someone@gmail.com" required></label>
+        <label id="number-label">Enter Years You've Been or Were in College: <input id="number" type="number" name="number" min="1" max="20" placeholder="4 (Fourth Year)"></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">What is your College Degree Level?
+          <select id="dropdown" name="dropdown">
+            <option>(select one)</option>
+            <option>Associate Degree</option>
+            <option>Bachelor's Degree</option>
+            <option>Master's Degree</Degree>
+            <option>Doctoral Degree</Degree>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Specify whether you've completed your Studies (required)</legend>
+        <label for="student"><input id="student" name="degree-level" type="radio" class="inline" value="student" checked>Continuing</label>
+        <label for="graduate"><input id="graduate" name="degree-level" type="radio" class="inline" value="graduate">Completed</label>
+      </fieldset>
+      <fieldset>
+        <legend>Select all the options that apply to you</legend>
+        <label for="employed"><input id="employed" name="employed" type="checkbox" class="inline" value="employed">I am currently employed</label>
+        <label for="unemployed"><input id="unemployed" name="unemployed" type="checkbox" class="inline" value="unemployed">I am unemployed</label>
+        <label for="self-employed"><input id="self-employed" name="self-employed" type="checkbox" class="inline" value="self-employed">I am self-employed</label>
+        <label for="looking-for-work"><input id="looking-for-work" name="looking-for-work" type="checkbox" class="inline" value="looking-for-work">I have been unable to find a job</label>
+        <label for="on-leave"><input id="on-leave" name="on-leave" type="checkbox" class="inline" value="on-leave">I am temporarily out of work</label>
+      </fieldset>
+      <label for="personal-details">Provide details about your institution and course, your performance and your desire (or lack thereof) of pursuing further studies.
+        <textarea id="personal-details" name="personal-details" placeholder="I am (or was) a student in..."></textarea>
+      </label>
+      <label for="submit-button"><input id="submit" name="submit-button" type="submit" value="Submit"></label>
+    </form>
+  </body>
+</html>
